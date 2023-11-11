@@ -1,0 +1,167 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.bg-dark {background-color: #333a40;}
+.navbar-dark
+header {
+    background-color: #444747;
+    color: white;
+    height: 70px;
+    /* z-index: 10;para que el texto quede atrás*/
+    /* position: sticky;para que no se mueva el header cuando bajo en la pagina*/
+    /*  top:15px;*/
+    grid-area: cabeza;
+}
+.cont {
+    display: flex;
+}
+
+nav {
+     text-align: right;
+}
+.carousel{
+width: 100%;
+    grid-area: carousel;
+}h6 {
+    margin: 0px;
+    font-size: 10px;
+}
+h2 {
+    margin: 0px
+}
+article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    grid-area: formulario;
+    border:2px solid saddlebrown;
+ margin:5px 20% 5px 20%;
+}
+textarea{
+    padding-top: 5px;
+    margin: 0px 1%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+#menu {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px 20px 300px;
+    justify-content: flex-end;
+    gap: 15px; /*para separar los botones*/
+    
+    font-size: 15px;
+
+}/*
+header img {
+    text-align: left;
+    width: 40%;
+ /*   margin: 10px 10px 30px 40px;*/
+ /*  border: 2px solid white;
+}*/
+
+#conferencia{
+    font-weight: bold;
+    font-size: 17px;
+   text-align: right;
+   padding:20px 10px 20px 90px;
+}
+.logo{
+    display: flex;
+    width: 20%;
+   
+    }
+
+.verde {
+    color: rgb(110, 164, 56);
+}
+
+#menu :hover {
+    color: rgb(35, 187, 78);
+    font-size: 14px;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+}
+/*.carousel-caption d-none d-md-block{
+    text-align:right;
+}*/
+/*#myCarousel p h5{
+    font-size: small;
+    text-align:right ;
+}*/
+
+.titulo{
+    text-align:  center;
+    margin:auto;
+    width: 100%;
+    grid-area:titulo;
+    padding: 15px;
+}
+.oradores{
+    display:flex;
+    align-items: flex-start ;
+    text-align:left;
+    column-width: 210px;
+    gap: 10px;
+    font-size: 15px;
+    grid-area: oradores;
+    margin:0% 20% 15px 20%;
+    padding: 10px;
+}
+
+#honolulu{
+    grid-area: fotos;
+    height: 500px;
+
+    box-sizing: border-box;
+}
+footer {
+    display: flex;
+    color: white;
+    background-color: rgb(23, 86, 62);
+    font-size: 12px;
+    height: 60px;
+    /*   margin:30px 15px 10px 10px;*/
+    border: 2px solid rgb(18, 177, 230);
+    grid-area: footer;
+}
+
+#pie {
+    display: flex;
+    gap: 5%;
+    list-style: none;
+    justify-content: center;
+    width: 100%;
+}
+
+.datos{
+   
+    height: 25px;
+    gap:10px;
+    justify-content: center;
+}
+.container{/*ocho filas 3columnas*/
+   display: grid; 
+   grid-template-columns:repeat(3,auto );
+   grid-template-rows:  repeat(7,auto);
+grid-template-areas: "cabeza cabeza cabeza"
+                     "carousel carousel carousel"
+                     "titulo titulo titulo"
+                     "oradores oradores oradores"
+                     "fotos fotos fotos"
+                    " formulario formulario formulario"
+                     "footer footer footer";
+}
+/*
+@media(max-width:1000px){
+.container{/*9filas 2columnas
+    display: grid; 
+    grid-template: repeat(10,auto)/repeat(2,auto);
+ grid-template-areas: "cabeza cabeza "
+                      "carrusel carrusel"
+                      "medio-titulo medio-titulo" 
+                      "steve bill"
+                      "ada ada" ;}
+
+}*/

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TI 23648</title>
+    <link id="icon" rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="estilos/estilos.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="cont">
+            <div>
+                <img src="images/codoacodo-min.png" height="60 px" alt="Codo a Codo logo">
+                <h3 id=conferencia>Conf. Bs.As.</h3>
+            </div>
+            <div>
+                <nav>
+                    <ul id=menu>
+                        <li>La conferencia</li>
+                        <li>Los oradores</li>
+                        <li>El lugar y la fecha</li>
+                        <li>Conviértete en orador</li>
+                        <li class="verde">Comprar tickets</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="myCarousel" class="carousel"><!--"carouselDark"-->
+            <div class="carousel-indicators">
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="Images/ba1-min.jpg" class="d-block w-100" width=100% height=800 alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Conf Bs As</h5>
+                        <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad
+                            el conocimiento y experiencia de los expertos
+                            que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros
+                            estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te
+                            esperamos!</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src=".Images/ba2-min.jpg.." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src=".Images/ba3-min.jpg.." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div>
+            <div>
+                <div class="titulo">
+                    <div>
+                        <h6>CONOCE A LOS <span>ORADORES</span> </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="oradores.container">
+            <div class="oradores">
+                <div class="steve">
+                    <img id=steve src="Images/steve-min.jpg" height="250 px" alt="steve jobs">
+                    <h6>JavaScript</h6>
+                    <h6>React</h6>
+                    <h6><b>Steve Jobs</b></h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo debitis veniam sapiente temporibus
+                        totam
+                        magni alias eaque! Soluta ea.</p>
+                </div>
+                <div class="bill">
+                    <img id=bill src="Images/bill-min.jpg" height="250 px" alt="bill Gates">
+                    <h6>JavaScript</h6>
+                    <h6>React</h6>
+                    <h6><b>Bill Gates</b></h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis libero possimus nulla ut
+                        quaerat
+                        dolorum quas voluptatem excepturi. Modi, ad voluptates? Labore.</p>
+                </div>
+                <div class="ada">
+                    <img id=ada src="Images/ada-min.jpeg" height="250 px" alt="ada lovelace">
+                    <h6>Negocios</h6>
+                    <h6>Startups</h6>
+                    <h6><b>Ada Lovelace</b></h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis libero possimus nulla ut
+                        quaerat
+                        dolorum quas voluptatem excepturi. Modi, ad voluptates? Labore.</p>
+                </div>
+            </div>
+        </div>
+        <div class=fotos>
+            <img id=honolulu src="Images/honolulu-min.jpg" haeight=300 width=100%>
+        </div>
+        <div>
+            <main class="formulario">
+                <article>
+                    <h6>CONVIÉRTETE EN UN</h6>
+                    <h2>ORADOR</h2>
+                    <H5>Anótate como orador para dar una charla ignite.Cuéntanos de qué querés hablar?</H5>
+                    <form action="mailto:nataliagentili37@gmail.com" method="post" enctype="text/plain">
+                        <div class=datos style="display: flex;">
+                            <input type="text" name="nombre" placeholder="Nombre" required>
+                            <INput type="text" name="apellido" placeholder="Apellido" required></INput>
+                        </div>
+                        <br>
+                        <textarea name="tema" id="tema" cols="36" rows="5"
+                            size="100%">Sobre qué querés hablar?</textarea>
+                        <h6>Recuerda incluir un título para tu charla</h6>
+                        <input type="submit" value="Enviar">
+                    </form>
+
+                </article>
+            </main>
+        </div>
+
+        <footer>
+            <ul id=pie>
+                <li>Preguntas frecuentes</li>
+                <li>Contáctenos</li>
+                <li>Prensa</li>
+                <li>Conferencias</li>
+                <li>Términos y Condiciones</li>
+                <li>Privacidad</li>
+                <li>Estudiantes</li>
+            </ul>
+        </footer>
+
+    </div>
+</body>
+
+</html>
